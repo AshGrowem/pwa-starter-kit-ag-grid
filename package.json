@@ -1,13 +1,14 @@
 {
-  "name": "pwa-starter-kit",
+  "name": "pwa-starter-kit-ag-grid",
   "version": "0.8.0",
   "contributors": [
+    "ashrafhadden",
     "The Polymer Authors"
   ],
   "license": "BSD-3-Clause",
   "repository": "Polymer/pwa-starter-kit",
   "scripts": {
-    "start": "polymer serve",
+    "start": "polymer serve -o --open-path view1",
     "build": "npm run build:prpl-server && npm run build:static",
     "build:prpl-server": "polymer build --auto-base-path && gulp prpl-server",
     "build:static": "polymer build",
@@ -23,6 +24,8 @@
     "@polymer/app-layout": "^3.0.0-pre.19",
     "@polymer/lit-element": "^0.5.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
+    "ag-grid": "^18.0.1",
+    "ag-grid-webcomponent": "^17.1.0",
     "pwa-helpers": "^0.8.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
